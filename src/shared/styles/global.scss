@@ -12,6 +12,11 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  @include theme($light-mode);
+  
+  @media (prefers-color-scheme: dark) {
+    @include theme($dark-mode);
+  }
 }
 
 .button {

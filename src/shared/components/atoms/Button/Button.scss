@@ -1,4 +1,5 @@
 @use '@shared/styles/mixins' as *;
+@use '@shared/styles/variables' as *;
 
 
 .button {
@@ -20,7 +21,7 @@
 
   // Variants
   &--primary {
-    background-color: #3B82F6;
+    background-color: "dark-blue";
     color: white;
 
     &:hover:not(:disabled) {

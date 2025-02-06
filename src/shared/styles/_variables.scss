@@ -1,7 +1,28 @@
+// Colors
+$dark-blue: #0C2130;
+$light-blue: #20C2ED;
+$light-green: #27F1AC;
+$white: #FFFF;
 $primary-color: #007bff;
 $secondary-color: #6c757d;
 $success-color: #28a745;
 $error-color: #dc3545;
+
+// Themes colors
+$light-mode: (
+  "background": $white,
+  "text": $dark-blue,
+  "primary": $light-blue,
+  "secondary": $light-green,
+);
+
+$dark-mode: (
+  "background": $dark-blue,
+  "text": $white,
+  "primary": $light-blue,
+  "secondary": $light-green,
+);
+
 
 // Font sizes
 $font-size-base: 1rem;

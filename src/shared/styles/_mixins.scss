@@ -55,3 +55,8 @@
     max-width: 1140px;
   }
 }
+
+@mixin theme($theme) {
+  background-color: map-get($theme, "background");
+  color: map-get($theme, "text");
+}

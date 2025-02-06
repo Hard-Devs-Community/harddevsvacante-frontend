@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { AuthProvider } from "./modules/auth/context/AuthContext";
 import { AppRoutes } from "./routes";
+import "./shared/styles/global.scss";
 
 const queryClient = new QueryClient({
 	defaultOptions: {

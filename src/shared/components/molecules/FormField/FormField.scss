@@ -1,0 +1,26 @@
+@use '@shared/styles/mixins' as *;
+
+.form-field {
+  @include flex(column, flex-start, stretch, 0.5rem);
+  width: 100%;
+
+  &__label {
+    color: #374151;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__helper-text {
+    font-size: 0.75rem;
+    color: #6B7280;
+    margin-top: 0.25rem;
+
+    &--error {
+      color: #DC2626;
+    }
+  }
+}

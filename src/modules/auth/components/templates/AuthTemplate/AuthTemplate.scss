@@ -1,0 +1,33 @@
+@import '@shared/styles/mixins';
+
+.auth-template {
+  @include flex(column, center, center);
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #F3F4F6;
+
+  &__content {
+    @include flex(column, flex-start, stretch, 2rem);
+    width: 100%;
+    max-width: 24rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    @include respond-to('md') {
+      padding: 3rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    text-align: center;
+
+    @include respond-to('md') {
+      font-size: 1.875rem;
+    }
+  }
+}
